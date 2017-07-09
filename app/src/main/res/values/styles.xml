@@ -1,0 +1,216 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppLoginTheme" parent="Theme.AccountKit">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+
+        <item name="android:windowBackground">@color/primary</item>
+
+        <item name="colorControlNormal">@color/primary_text</item>
+        <item name="colorControlActivated">@color/secondary_text</item>
+        <item name="colorControlHighlight">@color/secondary_text</item>
+        <item name="android:textColorHint">@color/secondary_text</item>
+
+
+        <item name="colorButtonNormal">@color/primary_dark</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:background">@color/primary</item>
+    </style>
+
+    <style name="MyErrorText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="EdittextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:textSize">10sp</item>
+
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/primary_dark</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/accent</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/secondary_text</item>
+    </style>
+
+    <style name="card_view_corner_radius" parent="CardView">
+        <item name="cardCornerRadius">8dp</item>
+    </style>
+
+    <style name="check_in_title_layout_margin_top">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="red_view_line_width_height">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="title_text_view_margin_left_and_text_size">
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="check_in_common_fields_margin_top">
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="check_in_common_text_input_layout_margin_left_right_weight">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="check_in_spinner_margin_left_right_weight_text_size">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="check_in_company_field_marignleft_right_top">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="check_In_proof_and_device_pic">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_weight">0.5</item>
+    </style>
+
+    <style name="check_in_edit_text_text_size">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="check_in_did_you_carry_text_view">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="check_in_submit_button">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="home_card_view_height_width_corner_radius" parent="CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">300dp</item>
+    </style>
+
+    <style name="home_title_layout_margin_top">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="home_logout_imageview">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="home_buttons_layout_margintop_padding_left_right_top">
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingRight">40dp</item>
+        <item name="android:paddingTop">20dp</item>
+    </style>
+
+    <style name="home_checkin_button">
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="home_checkout_button">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="login_edittext_button_layout">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:paddingRight">40dp</item>
+        <item name="android:paddingTop">20dp</item>
+    </style>
+
+    <style name="login_text_input_layout_email">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="login_login_button">
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="splash_card_view_height_width_corner_radius" parent="CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">140dp</item>
+    </style>
+
+    <style name="splash_app_name">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="dialog_layout_height">
+        <item name="android:layout_height">120dp</item>
+    </style>
+
+    <style name="dialog_icon_img_view">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+    </style>
+
+    <style name="dialog_text_view_description_margin_left_text_size">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="dialog_mobile_edit_text_textInputLayout_margin_left_right_top">
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">60dp</item>
+    </style>
+
+    <style name="dialog_mobile_edit_text_text_size">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="dialog_verify_btn_width_margin_top_bottom_padding">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+
+
+</resources>

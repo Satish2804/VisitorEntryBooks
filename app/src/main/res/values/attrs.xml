@@ -1,0 +1,33 @@
+<resources>
+
+    <declare-styleable name="VbTextView">
+        <attr name="setFont" format="enum">
+            <enum name="OpenSansCondensedLight" value="0" />
+            <enum name="OpenSansCondensedLightItalic" value="1" />
+            <enum name="OpenSansCondensedBold" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="VbButton">
+        <attr name="setButtonFont" format="enum">
+            <enum name="OpenSansCondensedLight" value="0" />
+            <enum name="OpenSansCondensedLightItalic" value="1" />
+            <enum name="OpenSansCondensedBold" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="VbEditText">
+        <attr name="setEdittextFont" format="enum">
+            <enum name="OpenSansCondensedLight" value="0" />
+            <enum name="OpenSansCondensedLightItalic" value="1" />
+            <enum name="OpenSansCondensedBold" value="2" />
+        </attr>
+    </declare-styleable>
+    <string-array name="FontNames">
+        <item>OpenSansCondensedLight.ttf</item>
+        <item>OpenSansCondensedLightItalic.ttf</item>
+        <item>OpenSansCondensedBold.ttf</item>
+    </string-array>
+
+
+
+</resources>

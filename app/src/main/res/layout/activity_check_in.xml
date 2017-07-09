@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.visitorentrybook.activities.checkIn.CheckInActivity">
+
+    <android.support.v7.widget.CardView
+        style="@style/card_view_corner_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/icons">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/icons"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                style="@style/check_in_title_layout_margin_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/view_line"
+                    style="@style/red_view_line_width_height"
+                    android:background="@color/accent" />
+
+                <com.visitorentrybook.widgets.VbTextView
+                    style="@style/title_text_view_margin_left_and_text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_check_in"
+                    android:textColor="@color/accent"
+                    app:setFont="OpenSansCondensedBold" />
+            </RelativeLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/image_vpic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                app:placeholderImage="@drawable/visitor_black"
+                app:roundAsCircle="true"
+                app:roundBottomLeft="false"
+                app:roundBottomRight="false"
+                app:roundingBorderColor="@color/accent"
+                app:roundingBorderWidth="1dp" />
+
+            <LinearLayout
+                style="@style/check_in_common_fields_margin_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout_first_name"
+                    style="@style/check_in_common_text_input_layout_margin_left_right_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.visitorentrybook.widgets.VbEditText
+                        android:id="@+id/edit_text_firstname"
+                        style="@style/check_in_edit_text_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/strFirstName"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/primary_text"
+                        app:setEdittextFont="OpenSansCondensedLight" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout_last_name"
+                    style="@style/check_in_common_text_input_layout_margin_left_right_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/secondary_text">
+
+                    <com.visitorentrybook.widgets.VbEditText
+                        android:id="@+id/edit_text_lastname"
+                        style="@style/check_in_edit_text_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:hint="@string/strLastName"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/primary_text"
+                        app:setEdittextFont="OpenSansCondensedLight" />
+
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/check_in_common_fields_margin_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout_mobile"
+                    style="@style/check_in_common_text_input_layout_margin_left_right_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/secondary_text">
+
+                    <com.visitorentrybook.widgets.VbEditText
+                        android:id="@+id/edit_text_mobile"
+                        style="@style/check_in_edit_text_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_mobile"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textColor="@color/primary_text"
+                        app:setEdittextFont="OpenSansCondensedLight" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout_emailAddress"
+                    style="@style/check_in_common_text_input_layout_margin_left_right_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/secondary_text">
+
+                    <com.visitorentrybook.widgets.VbEditText
+                        android:id="@+id/edittext_lastname"
+                        style="@style/check_in_edit_text_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:hint="@string/str_email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/primary_text"
+                        app:setEdittextFont="OpenSansCondensedLight" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textinput_emaillayout"
+                style="@style/check_in_company_field_marignleft_right_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/secondary_text">
+
+                <com.visitorentrybook.widgets.VbEditText
+                    android:id="@+id/edit_text_company_name"
+                    style="@style/check_in_edit_text_text_size"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_company_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textVisiblePassword|textCapWords"
+                    android:maxLines="1"
+                    android:textColor="@color/primary_text"
+                    app:setEdittextFont="OpenSansCondensedLight" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                style="@style/check_in_common_fields_margin_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout_whom_to_meet"
+                    style="@style/check_in_common_text_input_layout_margin_left_right_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <com.visitorentrybook.widgets.VbEditText
+                        android:id="@+id/edit_text_whom_to_meet"
+                        style="@style/check_in_edit_text_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_whom_to_meet"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/primary_text"
+                        app:setEdittextFont="OpenSansCondensedLight" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout_purpose_of_meet"
+                    style="@style/check_in_common_text_input_layout_margin_left_right_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <com.visitorentrybook.widgets.VbEditText
+                        android:id="@+id/edit_text_purpose_of_meet"
+                        style="@style/check_in_edit_text_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:hint="@string/str_purpose_of_meet"
+                        android:imeOptions="actionNext"
+                        android:inputType="textVisiblePassword|textCapWords"
+                        android:maxLines="1"
+                        android:textColor="@color/primary_text"
+                        app:setEdittextFont="OpenSansCondensedLight" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/check_in_common_fields_margin_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/vbauto_govt_issued_proofs"
+                    style="@style/check_in_spinner_margin_left_right_weight_text_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:spinnerMode="dialog"
+                    android:textColor="@color/primary_text"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_proof"
+                    style="@style/check_In_proof_and_device_pic"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    app:placeholderImage="@drawable/camera_black"
+                    app:roundBottomLeft="false"
+                    app:roundBottomRight="false"
+                    app:roundedCornerRadius="7dp"
+                    app:roundingBorderColor="@color/accent"
+                    app:roundingBorderWidth="1dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/check_in_common_fields_margin_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.visitorentrybook.widgets.VbTextView
+                    style="@style/check_in_did_you_carry_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/str_did_you_carry"
+                    android:textColor="@color/primary_text"
+                    app:setFont="OpenSansCondensedLight" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_device_details"
+                    style="@style/MySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:checked="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_device_proofs"
+                style="@style/check_in_common_fields_margin_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout_device_proofs"
+                    style="@style/check_in_common_text_input_layout_margin_left_right_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <com.visitorentrybook.widgets.VbEditText
+                        android:id="@+id/edit_text_auto_device_proofs"
+                        style="@style/check_in_edit_text_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_device_id"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:textColor="@color/primary_text"
+                        app:setEdittextFont="OpenSansCondensedLight" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_device"
+                    style="@style/check_In_proof_and_device_pic"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    app:placeholderImage="@drawable/camera_black"
+                    app:roundBottomLeft="false"
+                    app:roundBottomRight="false"
+                    app:roundedCornerRadius="7dp"
+                    app:roundingBorderColor="@color/accent"
+                    app:roundingBorderWidth="1dp" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_check_in"
+                style="@style/check_in_submit_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_submit" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</ScrollView>
